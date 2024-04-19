@@ -30,3 +30,16 @@ function getWeather() {
         displayError(error.message, true);
       });
   }
+
+  function displayWeatherInfo(data) {
+    // Formatting and displaying weather information
+    const weatherInfo = `
+      <h2>${data.name}, ${data.sys.country}</h2>
+      <p>Temperature: ${data.main.temp} ${getTemperatureUnit()}</p>
+      <p>Weather: ${data.weather[0].description}</p>
+      <p>Humidity: ${data.main.humidity}%</p>
+      <p>Wind Speed: ${data.wind.speed} m/s</p>
+    `;
+    document.getElementById('weather-info').innerHTML = weatherInfo;
+    document.getElementById('weather-info').classList.remove('hidden');
+  }
