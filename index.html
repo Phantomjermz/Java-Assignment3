@@ -16,6 +16,9 @@
      <!-- Button to trigger weather data retrieval -->
      <button onclick="getWeather()">Get Weather</button>
 
+     <!-- This div will display weather information -->
+     <div id="weather-info" class="hidden"></div>
+
          <!-- Dropdown for selecting units -->
     <label for="units">Select Units:</label>
     <select id="units" onchange="changeUnits()">
@@ -31,8 +34,7 @@
     </select>
   </div>
  
-     <!-- This div will display weather information -->
-     <div id="weather-info" class="hidden"></div>
+     
      <!-- JavaScript file -->
   <script src="script.js"></script>
 </body>
