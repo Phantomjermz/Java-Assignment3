@@ -7,6 +7,17 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+     <!-- This div will display error messages -->
+     <div id="error-message" class="hidden"></div>
+
+     <!-- Input field for entering city name -->
+     <label for="city">Enter City Name:</label>
+     <input type="text" id="city" placeholder="Enter city name...">
+     <!-- Button to trigger weather data retrieval -->
+     <button onclick="getWeather()">Get Weather</button>
+ 
+     <!-- This div will display weather information -->
+     <div id="weather-info" class="hidden"></div>
      <!-- JavaScript file -->
   <script src="script.js"></script>
 </body>
