@@ -49,3 +49,23 @@ function getWeather() {
     errorMessage.textContent = message;
     errorMessage.classList.toggle('hidden', !show);
   }
+  function getUnits() {
+    // Getting selected units (metric or imperial) from dropdown menu
+    return document.getElementById('units').value;
+}
+
+function getTemperatureUnit() {
+    // Determining the temperature unit based on selected units
+    return getUnits() === 'metric' ? '°C' : '°F';
+}
+
+function changeUnits() {
+    // Triggering weather data retrieval when units are changed
+    getWeather();
+}
+
+function changeTheme() {
+    // Changing theme (light or dark) based on selected option
+    const theme = document.getElementById('theme').value;
+    document.body.className = theme;
+}
