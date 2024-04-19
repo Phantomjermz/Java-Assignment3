@@ -43,3 +43,9 @@ function getWeather() {
     document.getElementById('weather-info').innerHTML = weatherInfo;
     document.getElementById('weather-info').classList.remove('hidden');
   }
+  function displayError(message, show) {
+    // Displaying error message if there is an issue with user input or API request
+    const errorMessage = document.getElementById('error-message');
+    errorMessage.textContent = message;
+    errorMessage.classList.toggle('hidden', !show);
+  }
