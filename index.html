@@ -7,35 +7,37 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-     <!-- This div will display error messages -->
-     <div id="error-message" class="hidden"></div>
-
-     <!-- Input field for entering city name -->
-     <label for="city">Enter City Name:</label>
-     <input type="text" id="city" placeholder="Enter city name...">
-     <!-- Button to trigger weather data retrieval -->
-     <button onclick="getWeather()">Get Weather</button>
-
-     <!-- This div will display weather information -->
-     <div id="weather-info" class="hidden"></div>
-
-         <!-- Dropdown for selecting units -->
-    <label for="units">Select Units:</label>
-    <select id="units" onchange="changeUnits()">
-      <option value="metric">Metric (°C)</option>
-      <option value="imperial">Imperial (°F)</option>
-    </select>
-
-    <!-- Dropdown for selecting theme -->
-    <label for="theme">Select Theme:</label>
-    <select id="theme" onchange="changeTheme()">
-      <option value="light">Light</option>
-      <option value="dark">Dark</option>
-    </select>
-  </div>
- 
-     
-     <!-- JavaScript file -->
-  <script src="script.js"></script>
-</body>
+    <div class="container">
+      <h1>Weather App</h1>
+      
+      <!-- This div will display error messages -->
+      <div id="error-message" class="hidden"></div>
+  
+      <!-- Input field for entering city name -->
+      <label for="city">Enter City Name:</label>
+      <input type="text" id="city" placeholder="Enter city name...">
+      <!-- Button to trigger weather data retrieval -->
+      <button onclick="getWeather()">Get Weather</button>
+  
+      <!-- This div will display weather information -->
+      <div id="weather-info" class="hidden"></div>
+  
+      <!-- Dropdown for selecting units -->
+      <label for="units">Select Units:</label>
+      <select id="units" onchange="changeUnits()">
+        <option value="metric">Metric (°C)</option>
+        <option value="imperial">Imperial (°F)</option>
+      </select>
+  
+      <!-- Dropdown for selecting theme -->
+      <label for="theme">Select Theme:</label>
+      <select id="theme" onchange="changeTheme()">
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+      </select>
+    </div>
+  
+    <!-- JavaScript file -->
+    <script src="script.js"></script>
+  </body>
 </html>
